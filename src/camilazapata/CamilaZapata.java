@@ -13,25 +13,23 @@ public class CamilaZapata {
 
         Scanner sc = new Scanner(System.in);
         
-        int a = 0;
-        int b = 4;
-        
-        try{
-        
-            System.out.println("ingrese el valor de A:");
-            a = sc.nextInt();
-                
-            System.out.println("ingrese el valor de B:");
-            b = sc.nextInt();
+       try {
        
-            int resultado = a / b;
-        
-            System.out.println("Resultado:"+resultado);
-        }catch(Exception e ){
-            System.out.println(""+e);
-        }
-        
+           String s = null;
+           int x = Integer.parseInt("abc");
+       
+           System.out.println(s.length());
+       } catch(NumberFormatException e){
+       
+           System.out.println("Texto no numero");
+       } catch(NullPointerException e){
+           System.out.println("Objeto nulo"+e);
+       }finally{
+       
+       
+       }
 
+        System.out.println("Prueba");
        
      
         //InputMismatchException
